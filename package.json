@@ -1,0 +1,26 @@
+{
+  "name": "eth-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "browserify ethlib.js --s ethlib | uglifyjs -c > public/ethlib.min.js ",
+    "start": "node index.js",
+    "stop": "node stop.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "Express": "^3.0.1",
+    "body-parser": "^1.18.2",
+    "bower": "^1.8.2",
+    "ethereumjs-tx": "^1.3.3",
+    "ethereumjs-wallet": "^0.6.0",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "socket.io": "^2.0.4",
+    "web3": "^0.20.0"
+  }
+}
